@@ -8,7 +8,7 @@ Nail Polish Microplastic **Project**
 
 # Etapas:
 
-* Pré-processamento 
+* [Pré-processamento](pre-processing/README.md)
 * Segmentação
 * Pós-processamento
 
