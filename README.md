@@ -1,5 +1,5 @@
 # NPMicroplastic
-Nail Polish Microplastic Project
+Nail Polish Microplastic **Project**
 
 
 ## Descrição breve do projeto
