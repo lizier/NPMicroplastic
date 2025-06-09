@@ -1,0 +1,93 @@
+#@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
+#@ File(label="Output directory", description="Select the output directory", style="directory") outputDir
+#@ File(label="Weka model", description="Select the Weka model to apply") modelPath
+#@ String(label="Result mode",choices={"Labels","Probabilities"}) resultMode
+
+segment( fin, fout ) 
+{
+	segmentator = null;
+	// get list of input images
+	listOfFiles = fin.listFiles();
+	if( listOfFiles != null)
+	{
+		for ( i = 0; i < listOfFiles.length; i++ )
+		{
+		    // process only files (do not go into sub-folders)
+		    if( listOfFiles[ i ].isFile() )
+		    {
+	        	// save result as PNG in output folder
+	            outputFileName = listOfFiles[ i ].getName().replaceFirst("[.][^.]+$", "") + ".png";
+	            outputFileName_ = fout.getPath() + File.separator + outputFileName;
+
+		        out = new File(outputFileName_);
+	            if( out.isFile() == false )
+	            {
+			        // try to read file as image
+			        IJ.log("Loading: "  + listOfFiles[i].getCanonicalPath());
+			        image = IJ.openImage( listOfFiles[i].getCanonicalPath() );
+			        if( image != null )
+			        {     
+			        	// create segmentator
+						if (segmentator == null)
+						{
+							segmentator = new WekaSegmentation( image );
+							// load classifier
+							segmentator.loadClassifier( modelPath.getCanonicalPath() );
+						} 
+						// apply classifier
+						// get results
+						result = segmentator.applyClassifier( image, 0, getProbs );
+			            if( !getProbs )
+			            	// assign same LUT as in GUI
+			            	result.setLut( Utils.getGoldenAngleLUT() );
+			            
+			            IJ.log("Saving: " + outputFileName_);
+			            new FileSaver( result ).saveAsPng( outputFileName_ );
+			 
+			            // force garbage collection (important for large images)
+			            result = null; 
+			            image = null;
+			            // segmentator = null;
+			            System.gc();
+			        }
+			        else
+		            {
+		            	IJ.log("Error: " + listOfFiles[i].getCanonicalPath());
+		            }
+	            }
+	            else
+	            {
+	            	IJ.log("Skiping: " + outputFileName_);
+		        }
+		    }
+		    else
+		    {
+		    	fout_ = new File(fout.getCanonicalPath() + File.separator + listOfFiles[ i ].getName() );
+		    	IJ.log( fout_.getCanonicalPath() );
+		    	fout_.mkdir();
+		    	segment( listOfFiles[ i ], fout_ );
+		    }
+		}
+	}
+}
+
+import trainableSegmentation.WekaSegmentation;
+import trainableSegmentation.utils.Utils;
+import ij.io.FileSaver;
+import ij.IJ;
+import ij.ImagePlus;
+
+// starting time
+startTime = System.currentTimeMillis();
+
+IJ.log("** Starting **");
+
+// caculate probabilities?
+getProbs = resultMode.equals( "Probabilities" );
+
+segment( inputDir, outputDir );
+
+// print elapsed time
+estimatedTime = System.currentTimeMillis() - startTime;
+
+IJ.log( "** Finished processing folder in " + estimatedTime + " ms **" );
