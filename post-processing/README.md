@@ -2,7 +2,7 @@
 
 | Output Data | Output Image |
 | ----------- | ------------ |
-| [CSV Data](data/data.csv | width=100) | ![Post-Processing](data/Sample/31.01/DSC_0925.png | width=100) |
+| [CSV Data](data/data.csv) | <img src="[URL_of_your_image](https://github.com/lizier/NPMicroplastic/blob/main/post-processing/data/Sample/31.01/DSC_0925.png)"  width="150" height="auto"/> |
 
 # Description
 
