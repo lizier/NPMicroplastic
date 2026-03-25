@@ -2,7 +2,7 @@
 
 | Output Data | Output Image |
 | ----------- | ------------ |
-| [CSV Data](data/data.csv) | ![Post-Processing](data/Sample/31.01/DSC_0925.png) |
+| [CSV Data](data/data.csv | width=100) | ![Post-Processing](data/Sample/31.01/DSC_0925.png | width=100) |
 
 # Description
 
@@ -17,5 +17,7 @@ In addition, the program creates a CSV file named `data.csv`, containing all ext
 
 Define the paths in the code using the variables inputpath, binatypath, and outputpath. The inputpath should point to the directory generated during the preprocessing stage, while the binatypath corresponds to the directory produced by the segmentation stage. The outputpath will be used to store the results.
 
-# Execution
+## Command
 
+##
+    python proc.py
