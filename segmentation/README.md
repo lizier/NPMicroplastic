@@ -1,15 +1,11 @@
 # Segmentation Step
 
-
-## Exemplo do WEKA
-
-Imagem do weka com uma imagem carregada
-
-# Descrição
-
-Falar da etapa de treinamento, dados das imagens e arquivo do treinamento.
+| <img src="https://github.com/lizier/NPMicroplastic/blob/main/pre-processing/data/Sample/31.01/DSC_0925.png" width="150" height="auto"/> | | <img src="https://github.com/lizier/NPMicroplastic/blob/main/pre-processing/data/Sample/31.01/DSC_0925.png" width="150" height="auto"/> |
 
 
-## Execução
+The segmentation process is based on a training stage using Weka. A subset of the images was manually annotated with binary labels, distinguishing between nail polish and background.
 
-Explicação do script
+This trained model was then applied to all images using the `apply.bsh` script within Fiji.
+
+The training data and related files are stored in the `weka` directory.da etapa de treinamento, dados das imagens e arquivo do treinamento.
+
