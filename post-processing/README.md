@@ -4,8 +4,6 @@
 | ----------- | ------------ |
 | [CSV Data](data/data.csv) | <img src="https://github.com/lizier/NPMicroplastic/blob/main/post-processing/data/Sample/31.01/DSC_0925.png"  width="150" height="auto"/> |
 
-# Description
-
 The code generates a composite image divided into four quadrants:
 
 * the original image
@@ -17,7 +15,7 @@ In addition, the program creates a CSV file named `data.csv`, containing all ext
 
 Define the paths in the code using the variables inputpath, binatypath, and outputpath. The inputpath should point to the directory generated during the preprocessing stage, while the binatypath corresponds to the directory produced by the segmentation stage. The outputpath will be used to store the results.
 
-## Command
+To run:
 
 ##
     python proc.py
