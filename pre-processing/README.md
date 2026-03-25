@@ -22,6 +22,5 @@ The program will traverse all images in the `inputpath` directory and reproduce 
 
 # Execution
 
-```console
-python prepoc.py
-```
+##
+    python prepoc.py
