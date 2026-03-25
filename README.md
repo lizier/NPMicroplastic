@@ -19,4 +19,12 @@ The procedure for obtaining the samples consisted of painting the nails of the v
 
 | Captured Image | Pre-Processing | Segmentation Step | Post-Processing |
 | -------------- | -------------- | ----------------- | --------------- |
-| ![Captured Image](data/Sample/31.01/DSC_0925.jpg) | | | |
+| ![Captured Image](data/Sample/31.01/DSC_0925.jpg) | ![Pre-Processing](pre-processing/data/Sample/31.01/DSC_0925.png) | ![Segmentation Step](segmentation/data/Sample/31.01/DSC_0925.png) | ![Post-Processing](post-processing/data/Sample/31.01/DSC_0925.png) |
+
+### Output Data
+
+From then sample image stored at GitHub : [CSV Data](post-processing/data/data.csv)
+
+## Dataset used
+
+[Download](http://ufscar.br)
