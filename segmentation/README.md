@@ -1,6 +1,6 @@
 # Segmentation Step
 
-| <img src="https://github.com/lizier/NPMicroplastic/blob/main/pre-processing/data/Sample/31.01/DSC_0925.png" width="150" height="auto"/> | | <img src="https://github.com/lizier/NPMicroplastic/blob/main/pre-processing/data/Sample/31.01/DSC_0925.png" width="150" height="auto"/> |
+| <img src="https://github.com/lizier/NPMicroplastic/blob/main/pre-processing/data/Sample/31.01/DSC_0925.png" width="150" height="auto"/> | | <img src="https://github.com/lizier/NPMicroplastic/blob/main/segmentation/data/Sample/31.01/DSC_0925.png" width="150" height="auto"/> |
 
 
 The segmentation process is based on a training stage using Weka. A subset of the images was manually annotated with binary labels, distinguishing between nail polish and background.
