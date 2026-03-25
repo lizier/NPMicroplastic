@@ -1,7 +1,7 @@
 # Pre-Processing Step
 | Input | Output |
 | ----- | ------ |
-| ![Captured Image](../data/Sample/31.01/DSC_0925.jpg) | ![Pre-Processing](data/Sample/31.01/DSC_0925.png) |
+| ![Captured Image](../data/Sample/31.01/DSC_0925.jpg | width=100) | ![Pre-Processing](data/Sample/31.01/DSC_0925.png | width=100) |
 
 
 # Objectives:
