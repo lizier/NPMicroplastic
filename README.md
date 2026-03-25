@@ -1,7 +1,8 @@
 # NPMicroplastic
 Nail Polish Microplastic **Project**
 
-> Authors: Bruna Natalina de S. Martins, Mario A. de S. Liziér, Adriana de O. Delgado-Silva e Walter R. Waldman \\
+> Authors: Bruna Natalina de S. Martins, Mario A. de S. Liziér, Adriana de O. Delgado-Silva e Walter R. Waldman
+> 
 > Affiliations: Federal University of São Carlos at Sorocaba - São Paulo - Brazil
 
 ## Contact
