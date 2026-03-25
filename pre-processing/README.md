@@ -1,7 +1,7 @@
 # Pre-Processing Step
 | Input | Output |
 | ----- | ------ |
-| ![Captured Image](../data/Sample/31.01/DSC_0925.jpg | width=100) | ![Pre-Processing](data/Sample/31.01/DSC_0925.png | width=100) |
+| <img src="https://github.com/lizier/NPMicroplastic/blob/main/data/Sample/31.01/DSC_0925.jpg" width="150" height="auto"/> | <img src="https://github.com/lizier/NPMicroplastic/blob/main/pre-processing/data/Sample/31.01/DSC_0925.png" width="150" height="auto"/> |
 
 
 # Objectives:
