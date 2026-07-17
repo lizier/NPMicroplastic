@@ -6,7 +6,7 @@ Nail Polish Microplastic **Project**
 > Affiliations: Federal University of São Carlos at Sorocaba - São Paulo - Brazil
 
 ## Contact
-
+Corresponding author: walter _at_ ufscar _dot_ br
 ## Project description
 
 ### Obtaining images
