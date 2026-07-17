@@ -6,8 +6,10 @@ Nail Polish Microplastic **Project**
 > Affiliations: Federal University of São Carlos at Sorocaba - São Paulo - Brazil
 
 ## Contact
-Corresponding author: walter _at_ ufscar _dot_ br
+Corresponding author:  Walter R. Waldman (walter _at_ ufscar _dot_ br)
+
 ## Project description
+The release of microplastics during nail polish wear highlights its potential as a previously overlooked source of diffuse pollution, particularly because of the presence of plasticizers as additives of concern. In this study, nail polish was used as a model system to investigate microplastic release during product use and peeling. Seventeen volunteers wearing the same nail polish formulation had polish coverage monitored periodically to assess wear dynamics.
 
 ### Obtaining images
 The procedure for obtaining the samples consisted of painting the nails of the volunteers and monitoring them with photographs over 13 days to obtain a graph with information about the surface area of ​​the remaining nail polish. A team of nail salon professionals was hired to paint the nails of four categories of volunteers: students, teachers, administrative technicians, and outsourced cleaning staff.
